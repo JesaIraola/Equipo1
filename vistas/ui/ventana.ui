@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>798</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Reservaciones del Hotel</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>798</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuClientes">
+    <property name="title">
+     <string>Clientes</string>
+    </property>
+    <addaction name="actionAdicionarCliente"/>
+    <addaction name="actionListarClientes"/>
+   </widget>
+   <widget class="QMenu" name="menuHabitaciones">
+    <property name="title">
+     <string>Habitaciones</string>
+    </property>
+    <addaction name="actionAdicionarHabitacion"/>
+    <addaction name="actionListarHabitaciones"/>
+   </widget>
+   <widget class="QMenu" name="menuTuroperadores">
+    <property name="title">
+     <string>Turoperadores</string>
+    </property>
+    <addaction name="actionAdicionarTuroperador"/>
+    <addaction name="actionListarTuroperadores"/>
+   </widget>
+   <widget class="QMenu" name="menuReservaciones">
+    <property name="title">
+     <string>Reservaciones</string>
+    </property>
+    <addaction name="actionRecepcion"/>
+    <addaction name="actionTuroperador"/>
+    <addaction name="actionListarReservaciones"/>
+   </widget>
+   <widget class="QMenu" name="menuConsultas">
+    <property name="title">
+     <string>Consultas</string>
+    </property>
+    <addaction name="actionPorcientoMensual"/>
+    <addaction name="actionMaximoClientes"/>
+    <addaction name="actionMaximoSexo"/>
+    <addaction name="actionReservacionTuroperador"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuClientes"/>
+   <addaction name="menuHabitaciones"/>
+   <addaction name="menuTuroperadores"/>
+   <addaction name="menuReservaciones"/>
+   <addaction name="menuConsultas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionImportar">
+   <property name="text">
+    <string>Importar</string>
+   </property>
+  </action>
+  <action name="actionExportar">
+   <property name="text">
+    <string>Exportar</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionAdicionarCliente">
+   <property name="text">
+    <string>Adicionar cliente</string>
+   </property>
+  </action>
+  <action name="actionListarClientes">
+   <property name="text">
+    <string>Listado de clientes</string>
+   </property>
+  </action>
+  <action name="actionAdicionarHabitacion">
+   <property name="text">
+    <string>Adicionar habitación</string>
+   </property>
+  </action>
+  <action name="actionListarHabitaciones">
+   <property name="text">
+    <string>Listado de habitaciones</string>
+   </property>
+  </action>
+  <action name="actionAdicionarTuroperador">
+   <property name="text">
+    <string>Adicionar Turoperador</string>
+   </property>
+  </action>
+  <action name="actionListarTuroperadores">
+   <property name="text">
+    <string>Listado de turoperadores</string>
+   </property>
+  </action>
+  <action name="actionRecepcion">
+   <property name="text">
+    <string>Recepción</string>
+   </property>
+  </action>
+  <action name="actionTuroperador">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Turoperador</string>
+   </property>
+  </action>
+  <action name="actionListarReservaciones">
+   <property name="text">
+    <string>Listado de reservaciones</string>
+   </property>
+  </action>
+  <action name="actionCosto_de_Habitacion">
+   <property name="text">
+    <string>Costo de habitacion</string>
+   </property>
+  </action>
+  <action name="actionCosto_de_reservacion">
+   <property name="text">
+    <string>Costo de reservacion</string>
+   </property>
+  </action>
+  <action name="actionPorcientoMensual">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Porciento mensual de reservaciones</string>
+   </property>
+   <property name="toolTip">
+    <string>Porciento mensual de reservaciones en la recepción por nacionalidad</string>
+   </property>
+  </action>
+  <action name="actionMaximoClientes">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Máximo de clientes</string>
+   </property>
+   <property name="iconText">
+    <string>Máximo de clientes del mes pasado en el hotel por nacionalidad</string>
+   </property>
+   <property name="toolTip">
+    <string>Máximo de clientes del mes pasado en el hotel por nacionalidad</string>
+   </property>
+  </action>
+  <action name="actionMaximoSexo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Máximo del sexo</string>
+   </property>
+   <property name="iconText">
+    <string> de clientes del año pasado en el hotel por nacionalidad </string>
+   </property>
+   <property name="toolTip">
+    <string> de clientes del año pasado en el hotel por nacionalidad </string>
+   </property>
+  </action>
+  <action name="actionReservacionTuroperador">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Clientes con reservaciones</string>
+   </property>
+   <property name="iconText">
+    <string>Clientes con reservaciones por turoperador</string>
+   </property>
+   <property name="toolTip">
+    <string>Clientes con reservaciones por turoperador</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
